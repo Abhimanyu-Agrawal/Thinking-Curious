@@ -1,0 +1,100 @@
+@font-face{
+    font-family: poppins;
+    src: url("fonts/poppins.regular.ttf") format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main img{
+    height: 30vw;
+    width: 30vw;
+    padding: 0.5vw 0.5vw;
+    border: 0.1vw solid wheat;
+}
+
+main #data{
+    width: 50vw;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: poppins;
+}
+
+main #data h1{
+    color: white;
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+main #data .extra{
+    font-weight: 100;
+}
+
+main #data p{
+    color: white;
+    font-size: 1vw;
+}
+
+main #data #end-like-links{
+    width: 15vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+main #data #end-like-links a{
+    width: 10vw;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    border: 0.1vw solid white;
+    border-radius: 15vw;
+    font-size: 1vw;
+    margin-top: 0.3vw;
+    transition: all ease-in-out 0.5s;
+    letter-spacing: 0.1vw;
+    padding-left: 0.6vw;
+}
+
+main #data #end-like-links a:hover{
+    width: 10vw;
+    color: black;
+    background-color: wheat;
+    font-size: 1.1vw;
+    letter-spacing: 0vw;
+    padding-left: 1vw;
+}
+
+main #data #end-like-links button{
+    background-color: transparent;
+    width: 3vw;
+    height: 2vw;
+    border: none;
+}
+
+main #data #end-like-links button i{
+    font-size: 2vw;
+    color: white;
+}
+main #data #end-like-links button i:hover{
+    cursor: pointer;
+}

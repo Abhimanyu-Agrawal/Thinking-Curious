@@ -1,0 +1,360 @@
+@font-face{
+    font-family: mt regular;
+    src: url("fonts/Montserrat-Regular.ttf") format('truetype');
+}
+
+@font-face{
+    font-family: poppins;
+    src: url("fonts/poppins.regular.ttf") format('truetype');
+}
+
+@font-face{
+    font-family: rough;
+    src: url("fonts/HalfTermSchoolsOut-V4q5l.ttf") format('truetype');
+}
+
+@font-face{
+    font-family:sk;
+    src: url("fonts/Skribblugh-TC-Rg.ttf") format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+main{
+    overflow: hidden;
+}
+
+main #page1{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+}
+
+main #page1 nav{
+    height: 12vw;
+    padding: 1vw 5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+main #page1 nav a{
+    height: 10vw;
+    width: 20vw;
+    text-decoration: none;
+    position: relative;
+}
+
+main #page1 nav a img{
+    height: 7.5vw;
+    width: 7vw;
+    position: absolute;
+    z-index: 0;
+}
+
+main #page1 nav a #curious{
+    position: absolute;
+    font-family: poppins;
+    color: white;
+    font-size: 1.9vw;
+    top: 2.9vw;
+    left: 5.7vw;
+    display: flex;
+}
+
+main #page1 nav a #think{
+    position: absolute;
+    font-family: poppins;
+    color: white;
+    font-size: 1vw;
+    top: 2.2vw;
+    left: 2.4vw;
+    display: flex;
+    gap: 0.7vw;
+    transition: all ease-in-out 0.7s;
+}
+
+main #page1 nav a:hover #think{
+    display: flex;
+    gap: 0.25vw;
+    left: 5.6vw;
+}
+
+main #page1 #p1{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+main #page1 #p1 #mine{
+    margin-left: 6vw;
+    border-radius: 2vw;
+    opacity: 80%;
+    box-shadow: 0.5vw 0.5vw 2vw black, 0.1vw 0.5vw 2vw wheat;
+    height: 35vw;
+}
+
+main #page1 #p1 #arrow-body{
+    position: absolute;
+    rotate: 145deg;
+    left: 20vw;
+    top: 14vw;
+    height: 5vw;
+    width: 15vw;
+}
+
+main #page1 #p1 #arrow-head{
+    position: absolute;
+    rotate: 145deg;
+    left: 19vw;
+    top: 17vw;
+    height: 5vw;
+    width: 5vw;
+}
+
+main #page1 #p1 #img-w{
+    position: absolute;
+    font-family: rough;
+    color: white;
+    width: 16vw;
+    font-size: 4vw;
+    top: 5vw;
+    left: 30vw;
+    text-align:end;
+}
+
+main #page1 #p1 #p1-data{
+    display: flex;
+    flex-direction: column;
+    width: 42.4vw;
+    margin-right: 5vw;
+}
+
+main #page1 #p1 #p1-data h1{
+    font-size: 5vw;
+    font-family: poppins;
+    color: white;
+    text-shadow: 0.1vw 0.1vw 1vw black, 0.1vw 0.1vw 0.4vw white;
+    text-align: end;
+}
+
+main #page1 #p1 #p1-data p{
+    font-size: 1.6vw;
+    font-family: poppins;
+    text-align:end;
+    color: white;
+}
+
+main #page1 #p1 #p1-data p a{
+    color: white;
+    text-decoration: none;
+    transition: all ease-in-out 0.5s;
+}
+
+main #page1 #p1 #p1-data p a i{
+    font-size: 2vw;
+}
+
+main #page1 #p1 #p1-data p a:hover{
+    color: wheat;
+}
+
+main #page2{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    margin-top: 4vw;
+}
+
+main #page2 #heading-p2{
+    display: flex;
+    align-self: center;
+    gap: 5vw;
+}
+
+main #page2 #heading-p2 h1{
+    font-family: poppins;
+    color: white;
+    font-size: 5vw;
+}
+
+main #page2 #page2-arrange{
+    display: flex;
+    justify-content: center;
+    gap: 8vw;
+}
+
+main #page2 #page2-arrange a{
+    width: 14vw;
+    height: 22vw;
+    text-decoration: none;
+}
+
+main #page2 #page2-arrange a .p2-card{
+    display: flex;
+    flex-direction: column;
+    width: 14vw;
+    height: 22vw;
+    border: 0.1vw solid white;
+    padding: 1vw 1vw;
+    gap: 1vw;
+    transition: all ease-in-out 0.5s;
+}
+
+main #page2 #page2-arrange a .p2-card img{
+    height: 12vw;
+    width: 12vw;
+    transition: all ease-in-out 0.5s;
+}
+
+main #page2 #page2-arrange a .p2-card h4{
+    color: white;
+    font-family: poppins;
+    font-weight:400;
+    font-size: 1.5vw;
+    text-align: center;
+    transition: all ease-in-out 0.5s;
+}
+
+main #page2 #page2-arrange a .p2-card p{
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    font-family: poppins;
+    font-size: 1vw;
+    
+}
+
+main #page2 #page2-arrange a:hover .p2-card{
+    background-color: wheat;
+}
+
+main #page2 #page2-arrange a:hover .p2-card img{
+    border: 0.1vw solid black;
+}
+
+main #page2 #page2-arrange a:hover .p2-card h4{
+    color: black;
+}
+
+main #page2 #page2-arrange a:hover .p2-card p{
+    color: black;
+    font-weight: 400;
+}
+
+main #page2 p{
+    font-family: poppins;
+    font-size: 2vw;
+    color: white;
+    align-self: center;
+}
+
+main #page3{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0vw 3vw;
+}
+
+main #page3 img{
+    align-self:center;
+    margin-top: 3vw;
+    height: 30vw;
+    width: 40vw;
+    border-radius:2vw;
+    opacity: 60%;
+}
+
+main #page3 #arrow-head{
+    position: absolute;
+    rotate: 340deg;
+    right: 37vw;
+    bottom: 11vw;
+    height: 7vw;
+    width: 5vw;
+    opacity: 150%;
+}
+
+main #page3 #arrow-body{
+    position: absolute;
+    rotate: 350deg;
+    right: 38vw;
+    top: 26vw;
+    height: 8vw;
+    width: 20vw;
+    opacity: 120%;
+}
+
+main #page3 #links{
+    display: flex;
+    align-self: flex-end;
+    gap: 0.5vw;
+}
+
+main #page3 #links a{
+    text-decoration: none;
+    margin-bottom: 2vw;
+}
+
+main #page3 #links a i{
+    font-size: 5vw;
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+main #page3 #links a:hover i{
+    color: wheat;
+} 
+
+main #page3 #img-me{
+    font-family:rough;
+    font-size: 6vw;
+    color: white;
+    padding-top: 23.5vw;
+    margin-left: 10vw;
+}
+
+main #page3 #img-social{
+    position: absolute;
+    font-family:rough;
+    font-size: 7vw;
+    color: white;
+    left: 6vw;
+}
+
+main #page3 #white-arrow-social{
+    position: absolute;
+    height: 10vw;
+    width: 34vw;
+    transform: scaleX(-1);
+    rotate: 290deg;
+    top: 17vw;
+    left: 0vw;
+    opacity: 150%;
+}
+
+main #page3 #end-pg-info p{
+    font-family: poppins;
+    color: white;
+    font-size: 2vw;
+    position: absolute;
+    right: 6vw;
+    bottom: 5vw;
+}
